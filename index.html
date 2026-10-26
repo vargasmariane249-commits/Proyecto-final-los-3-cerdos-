@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Tres Cerditos - Experiencia Transmedia e Interactiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0fdf4;
+        }
+        
+        h1, h2, h3, .font-heading {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .canvas-container {
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="text-slate-800 pb-12">
+
+    <!-- Navegación -->
+    <header class="bg-emerald-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🐷</span>
+                <h1 class="text-2xl md:text-3xl text-yellow-300 tracking-wide">Los Tres Cerditos</h1>
+            </div>
+            <nav class="flex space-x-2 md:space-x-4 text-sm md:text-base mt-2 sm:mt-0 font-semibold">
+                <a href="#historia" class="px-3 py-1 bg-emerald-700 hover:bg-emerald-800 rounded-full transition">Cuento</a>
+                <a href="#podcast" class="px-3 py-1 bg-emerald-700 hover:bg-emerald-800 rounded-full transition">Podcast</a>
+                <a href="#videos" class="px-3 py-1 bg-emerald-700 hover:bg-emerald-800 rounded-full transition">Videos</a>
+                <a href="#juego" class="px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white rounded-full transition">Juego</a>
+                <a href="#colorear" class="px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition">Colorear</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="bg-gradient-to-b from-emerald-500 to-emerald-600 text-white py-12 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl mb-4 text-yellow-300">¡Bienvenidos a la Aventura del Bosque!</h2>
+            <p class="text-lg md:text-xl font-medium max-w-2xl mx-auto mb-6">
+                Descubre el clásico cuento de Los Tres Cerditos mediante actividades interactivas, podcasts, videos educativos y juegos de toma de decisiones.
+            </p>
+            <a href="#juego" class="inline-block bg-yellow-400 text-emerald-950 font-bold px-8 py-3 rounded-full text-lg shadow-lg hover:bg-yellow-300 hover:scale-105 transition transform">
+                🎮 ¡Jugar Ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Cuento e Ilustraciones -->
+    <section id="historia" class="max-w-5xl mx-auto my-12 px-4">
+        <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10 border-4 border-emerald-200">
+            <h2 class="text-3xl text-emerald-700 text-center mb-6 border-b-4 border-yellow-300 pb-2 inline-block">📖 El Cuento Ilustrado</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=80" alt="Tres cerditos en el bosque" class="rounded-2xl shadow-md border-4 border-amber-200 object-cover h-64 w-full">
+                    <p class="text-xs text-gray-500 text-center mt-1">Ilustración: Tres hermanitos cerditos en el bosque</p>
+                </div>
+                <div class="space-y-4 text-slate-700 leading-relaxed text-lg">
+                    <p>Había una vez tres cerditos que eran hermanos y se fueron por el mundo a conseguir fortuna. El más grande les dijo a sus hermanos que sería bueno que se pusieran a construir sus propias casas para estar protegidos.</p>
+                    <p><strong class="text-emerald-700">El menor</strong> hizo su casa de <em>paja</em> para terminar rápido e ir a jugar. <strong class="text-amber-700">El mediano</strong> la construyó de <em>madera</em>. Pero <strong class="text-red-700">el mayor</strong> trabajó duro y construyó una fuerte casa de <em>ladrillo</em>.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1 space-y-4 text-slate-700 leading-relaxed text-lg">
+                    <p>Pronto llegó el <strong>Lobo Feroz</strong> y sopló y sopló hasta que la casa de paja derribó. El pequeño corrió a la casa de madera de su hermano, ¡pero el lobo volvió a soplar y también la destruyó!</p>
+                    <p>Los dos hermanos buscaron refugio en la casa de ladrillo del mayor. El lobo sopló con todas sus fuerzas, ¡pero no logró derribarla! Al intentar entrar por la chimenea, cayó en una olla hirviendo y huyó para nunca regresar.</p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" alt="Casa resistente de ladrillos" class="rounded-2xl shadow-md border-4 border-red-200 object-cover h-64 w-full">
+                    <p class="text-xs text-gray-500 text-center mt-1">Ilustración: La resistente casa de ladrillos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Podcast AUDIONARRACIÓN -->
+    <section id="podcast" class="max-w-5xl mx-auto my-12 px-4">
+        <div class="bg-gradient-to-r from-amber-100 to-orange-100 rounded-3xl p-6 md:p-8 shadow-md border-2 border-amber-300">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-amber-500 text-white p-4 rounded-full text-3xl shadow">
+                        🎙️
+                    </div>
+                    <div>
+                        <h3 class="text-2xl text-amber-900 font-bold">Podcast Cuentacuentos</h3>
+                        <p class="text-amber-800">Escucha la narración con efectos de sonido e historia comentada</p>
+                    </div>
+                </div>
+                <!-- Reproductor de Audio Simulado / Podcast Incorporado -->
+                <div class="w-full md:w-1/2 bg-white p-4 rounded-2xl shadow-inner border border-amber-200">
+                    <div class="text-center font-bold text-slate-700 mb-2">Episodio 1: "El Esfuerzo de los Tres Cerditos"</div>
+                    <audio controls class="w-full">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Videos Educativos -->
+    <section id="videos" class="max-w-5xl mx-auto my-12 px-4">
+        <h2 class="text-3xl text-emerald-800 text-center mb-8">🎬 Videos del Cuento y Canciones</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Video 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-emerald-100 flex flex-col">
+                <div class="relative group cursor-pointer aspect-video bg-emerald-950">
+                    <!-- Portada Ilustrada SVG/HTML -->
+                    <div id="cover-v1" class="absolute inset-0 bg-gradient-to-tr from-amber-700 via-yellow-600 to-amber-500 flex flex-col justify-between p-4 text-white z-10 transition-opacity">
+                        <div class="flex justify-between items-center">
+                            <span class="bg-red-500 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Cuento Animado</span>
+                            <span class="text-xl">🐷🐷🐷</span>
+                        </div>
+                        <div class="text-center my-auto">
+                            <i class="fas fa-play-circle text-5xl text-yellow-300 drop-shadow-md group-hover:scale-110 transition transform"></i>
+                            <h5 class="font-bold text-lg text-white mt-2 drop-shadow">La Historia Clásica</h5>
+                        </div>
+                        <p class="text-xs text-amber-100 text-center">Haz clic para reproducir</p>
+                    </div>
+                    <iframe id="iframe-v1" class="w-full h-full" src="" data-src="https://www.youtube.com/embed/ViRUaVU9Fzc?autoplay=1" title="Video 1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-emerald-800 mb-1">Los Tres Cerditos - Versión Animada</h4>
+                        <p class="text-sm text-slate-600">Disfruta de la animación del clásico cuento infantil y sus lecciones.</p>
+                    </div>
+                    <button onclick="loadVideo('v1')" class="mt-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-xl text-sm transition">Ver Video</button>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-emerald-100 flex flex-col">
+                <div class="relative group cursor-pointer aspect-video bg-emerald-950">
+                    <!-- Portada Ilustrada SVG/HTML -->
+                    <div id="cover-v2" class="absolute inset-0 bg-gradient-to-tr from-emerald-700 via-teal-600 to-emerald-500 flex flex-col justify-between p-4 text-white z-10 transition-opacity">
+                        <div class="flex justify-between items-center">
+                            <span class="bg-emerald-800 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Aventura</span>
+                            <span class="text-xl">🐺💨</span>
+                        </div>
+                        <div class="text-center my-auto">
+                            <i class="fas fa-play-circle text-5xl text-yellow-300 drop-shadow-md group-hover:scale-110 transition transform"></i>
+                            <h5 class="font-bold text-lg text-white mt-2 drop-shadow">El Lobo y los Cerditos</h5>
+                        </div>
+                        <p class="text-xs text-emerald-100 text-center">Haz clic para reproducir</p>
+                    </div>
+                    <iframe id="iframe-v2" class="w-full h-full" src="" data-src="https://www.youtube.com/embed/2wj32zJCP1E?autoplay=1" title="Video 2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-emerald-800 mb-1">Los Tres Cerditos - Versión Interactiva</h4>
+                        <p class="text-sm text-slate-600">Una emocionante reinterpretación para explorar en familia.</p>
+                    </div>
+                    <button onclick="loadVideo('v2')" class="mt-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-xl text-sm transition">Ver Video</button>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-emerald-100 flex flex-col">
+                <div class="relative group cursor-pointer aspect-video bg-emerald-950">
+                    <!-- Portada Ilustrada SVG/HTML -->
+                    <div id="cover-v3" class="absolute inset-0 bg-gradient-to-tr from-pink-600 via-purple-600 to-indigo-600 flex flex-col justify-between p-4 text-white z-10 transition-opacity">
+                        <div class="flex justify-between items-center">
+                            <span class="bg-pink-500 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Musical</span>
+                            <span class="text-xl">🎵🎶</span>
+                        </div>
+                        <div class="text-center my-auto">
+                            <i class="fas fa-play-circle text-5xl text-yellow-300 drop-shadow-md group-hover:scale-110 transition transform"></i>
+                            <h5 class="font-bold text-lg text-white mt-2 drop-shadow">¿Quién Teme al Lobo Feroz?</h5>
+                        </div>
+                        <p class="text-xs text-pink-100 text-center">Haz clic para reproducir</p>
+                    </div>
+                    <iframe id="iframe-v3" class="w-full h-full" src="" data-src="https://www.youtube.com/embed/Fm0Z0sAtS_M?autoplay=1" title="Video 3" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-emerald-800 mb-1">Canción Infantil de los Cerditos</h4>
+                        <p class="text-sm text-slate-600">Música, ritmo y diversión con la célebre canción del bosque.</p>
+                    </div>
+                    <button onclick="loadVideo('v3')" class="mt-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-xl text-sm transition">Ver Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juego Interactivo: Arcade "Defiende la Casa de Ladrillo" -->
+    <section id="juego" class="max-w-4xl mx-auto my-12 px-4">
+        <div class="bg-white rounded-3xl shadow-xl p-6 md:p-8 border-4 border-amber-300">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-4">
+                <div>
+                    <h2 class="text-3xl text-amber-700 font-bold">🛡️ Juego: Defiende la Casa del Lobo</h2>
+                    <p class="text-slate-600 text-sm">¡Detén los ráfagas de aire y soplidos del Lobo Feroz colocando ladrillos y escudos antes de que derrumbe la fortaleza!</p>
+                </div>
+                <div class="mt-2 md:mt-0 bg-amber-100 px-4 py-2 rounded-2xl border border-amber-300 flex space-x-4 text-amber-900 font-bold">
+                    <div>Puntos: <span id="game-score">0</span></div>
+                    <div>Vidas: <span id="game-lives">❤️❤️❤️</span></div>
+                </div>
+            </div>
+
+            <!-- Canvas del Juego Arcade -->
+            <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-inner border-4 border-amber-500">
+                <canvas id="arcadeCanvas" width="700" height="380" class="w-full h-auto block"></canvas>
+
+                <!-- Pantalla de Inicio / Game Over Overlay -->
+                <div id="arcade-overlay" class="absolute inset-0 bg-black/80 flex flex-col justify-center items-center text-white p-6 text-center z-20">
+                    <h3 id="arcade-title" class="text-3xl font-bold text-yellow-300 mb-2">¡Resiste los Soplidos del Lobo!</h3>
+                    <p id="arcade-desc" class="text-slate-200 mb-6 max-w-md text-sm">Haz clic/toca en la pantalla para construir escudos de ladrillo en el camino y bloquear las ráfagas del lobo antes de que golpeen la casa.</p>
+                    <button id="arcade-start-btn" onclick="startArcadeGame()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-3 rounded-full text-lg shadow-lg hover:scale-105 transition transform">
+                        🚀 ¡Comenzar Juego!
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap justify-between items-center text-xs text-slate-500 bg-amber-50 p-3 rounded-xl border border-amber-200">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg">💡</span>
+                    <span><strong>Instrucción:</strong> Haz clic en el área de juego para colocar barreras protectoras donde vienen los tornados/soplidos.</span>
+                </div>
+                <button onclick="resetArcadeStats()" class="text-amber-700 font-bold hover:underline mt-2 sm:mt-0">Reiniciar Puntuación</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Interactiva: Taller Avanzado de Dibujo y Coloreado -->
+    <section id="colorear" class="max-w-4xl mx-auto my-12 px-4">
+        <div class="bg-white rounded-3xl shadow-xl p-6 md:p-8 border-4 border-pink-200">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-3xl text-pink-600 font-bold">🎨 Taller de Dibujo, Coloreado y Estampas</h2>
+                    <p class="text-slate-600 text-sm">Elige una plantilla para colorear, usa pinceles, sellos mágicos o dibuja libremente.</p>
+                </div>
+                <!-- Selector de Plantilla -->
+                <div class="mt-3 md:mt-0 flex items-center space-x-2">
+                    <label class="text-xs font-bold text-slate-600">Plantilla:</label>
+                    <select id="templateSelect" onchange="changeTemplate(this.value)" class="bg-pink-50 border-2 border-pink-300 rounded-xl px-3 py-1 text-sm font-bold text-pink-900 focus:outline-none">
+                        <option value="house">🏠 Casa de Ladrillo</option>
+                        <option value="pig">🐷 Cerdito Feliz</option>
+                        <option value="wolf">🐺 Lobo Feroz</option>
+                        <option value="blank">📄 Lienzo en Blanco</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <!-- Barra de Herramientas Completa -->
+                <div class="w-full bg-pink-50 p-4 rounded-2xl border-2 border-pink-200 mb-4 flex flex-wrap gap-4 justify-between items-center">
+                    
+                    <!-- Paleta de Colores -->
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span class="text-xs font-bold text-slate-600 mr-1">Color:</span>
+                        <button onclick="setColor('#ef4444')" class="w-7 h-7 rounded-full bg-red-500 border-2 border-white shadow hover:scale-110 transition" title="Rojo"></button>
+                        <button onclick="setColor('#f97316')" class="w-7 h-7 rounded-full bg-orange-500 border-2 border-white shadow hover:scale-110 transition" title="Naranja"></button>
+                        <button onclick="setColor('#eab308')" class="w-7 h-7 rounded-full bg-yellow-500 border-2 border-white shadow hover:scale-110 transition" title="Amarillo"></button>
+                        <button onclick="setColor('#22c55e')" class="w-7 h-7 rounded-full bg-green-500 border-2 border-white shadow hover:scale-110 transition" title="Verde"></button>
+                        <button onclick="setColor('#06b6d4')" class="w-7 h-7 rounded-full bg-cyan-500 border-2 border-white shadow hover:scale-110 transition" title="Cian"></button>
+                        <button onclick="setColor('#3b82f6')" class="w-7 h-7 rounded-full bg-blue-500 border-2 border-white shadow hover:scale-110 transition" title="Azul"></button>
+                        <button onclick="setColor('#ec4899')" class="w-7 h-7 rounded-full bg-pink-500 border-2 border-white shadow hover:scale-110 transition" title="Rosado"></button>
+                        <button onclick="setColor('#78350f')" class="w-7 h-7 rounded-full bg-amber-900 border-2 border-white shadow hover:scale-110 transition" title="Café"></button>
+                        <button onclick="setColor('#000000')" class="w-7 h-7 rounded-full bg-black border-2 border-white shadow hover:scale-110 transition" title="Negro"></button>
+                        <input type="color" id="customColorPicker" onchange="setColor(this.value)" class="w-8 h-8 rounded-lg cursor-pointer border-0 bg-transparent" title="Color personalizado">
+                    </div>
+
+                    <!-- Modo de dibujo / Pincel / Estampas / Borrador -->
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-bold text-slate-600">Herramienta:</span>
+                        <button onclick="setTool('brush')" id="tool-brush" class="px-3 py-1.5 bg-pink-500 text-white font-bold text-xs rounded-xl shadow transition">🖌️ Pincel</button>
+                        <button onclick="setTool('eraser')" id="tool-eraser" class="px-3 py-1.5 bg-white text-slate-700 border font-bold text-xs rounded-xl shadow transition">🧹 Borrador</button>
+                        <button onclick="setTool('stamp')" id="tool-stamp" class="px-3 py-1.5 bg-white text-slate-700 border font-bold text-xs rounded-xl shadow transition">⭐ Estampa</button>
+                    </div>
+
+                    <!-- Selector de Estampas -->
+                    <div id="stampSelector" class="hidden flex items-center space-x-1 bg-white p-1 rounded-xl border border-pink-200">
+                        <button onclick="setStamp('🐷')" class="text-lg p-1 hover:bg-pink-100 rounded">🐷</button>
+                        <button onclick="setStamp('🐺')" class="text-lg p-1 hover:bg-pink-100 rounded">🐺</button>
+                        <button onclick="setStamp('🧱')" class="text-lg p-1 hover:bg-pink-100 rounded">🧱</button>
+                        <button onclick="setStamp('🌲')" class="text-lg p-1 hover:bg-pink-100 rounded">🌲</button>
+                        <button onclick="setStamp('🌸')" class="text-lg p-1 hover:bg-pink-100 rounded">🌸</button>
+                    </div>
+
+                    <!-- Tamaño del Trazo -->
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-bold text-slate-600">Grosor:</span>
+                        <input type="range" id="brushSize" min="2" max="30" value="6" onchange="setLineWidth(this.value)" class="w-20 accent-pink-500">
+                    </div>
+
+                    <!-- Acciones -->
+                    <div class="flex items-center space-x-2">
+                        <button onclick="undoCanvas()" class="px-3 py-1.5 bg-amber-100 hover:bg-amber-200 text-amber-800 text-xs font-bold rounded-xl border border-amber-300 transition">↩️ Deshacer</button>
+                        <button onclick="clearCanvas()" class="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-600 text-xs font-bold rounded-xl border border-red-300 transition">🗑️ Limpiar</button>
+                    </div>
+                </div>
+
+                <!-- Contenedor del Canvas -->
+                <div class="canvas-container relative bg-white border-4 border-pink-300 rounded-2xl shadow-inner overflow-hidden max-w-full">
+                    <canvas id="paintCanvas" width="650" height="400" class="cursor-crosshair block max-w-full h-auto"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-slate-800 text-white py-6 text-center text-sm">
+        <p>© 2026 Plataforma Transmedia Educativa - Proyecto "Los Tres Cerditos"</p>
+        <p class="text-slate-400 mt-1">Diseñado para la formación docente y aprendizaje interactivo infantil.</p>
+    </footer>
+
+    <script>
+        // --- Cargar Videos con Portada Personalizada ---
+        function loadVideo(id) {
+            document.getElementById('cover-' + id).classList.add('opacity-0', 'pointer-events-none');
+            const iframe = document.getElementById('iframe-' + id);
+            iframe.src = iframe.getAttribute('data-src');
+        }
+
+        // --- JUEGO ARCADE: DEFIENDE LA CASA DE LADRILLO ---
+        const arcadeCanvas = document.getElementById('arcadeCanvas');
+        const arcadeCtx = arcadeCanvas.getContext('2d');
+        
+        let arcadeRunning = false;
+        let score = 0;
+        let lives = 3;
+        let wolfX = 50;
+        let wolfY = 280;
+        let houseX = 600;
+        let houseY = 240;
+        let attacks = [];
+        let barriers = [];
+        let spawnTimer = 0;
+        let animFrameId = null;
+
+        function startArcadeGame() {
+            document.getElementById('arcade-overlay').classList.add('hidden');
+            score = 0;
+            lives = 3;
+            attacks = [];
+            barriers = [];
+            arcadeRunning = true;
+            updateArcadeHUD();
+            lastTime = performance.now();
+            requestAnimationFrame(gameLoop);
+        }
+
+        function updateArcadeHUD() {
+            document.getElementById('game-score').textContent = score;
+            document.getElementById('game-lives').textContent = '❤️'.repeat(lives) || '💀';
+        }
+
+        function resetArcadeStats() {
+            score = 0;
+            lives = 3;
+            updateArcadeHUD();
+        }
+
+        // Click en canvas para colocar barreras
+        arcadeCanvas.addEventListener('click', function(e) {
+            if (!arcadeRunning) return;
+            const rect = arcadeCanvas.getBoundingClientRect();
+            const scaleX = arcadeCanvas.width / rect.width;
+            const scaleY = arcadeCanvas.height / rect.height;
+            const clickX = (e.clientX - rect.left) * scaleX;
+            const clickY = (e.clientY - rect.top) * scaleY;
+
+            // Solo colocar en la zona media de defensa
+            if (clickX > 150 && clickX < 550) {
+                barriers.push({
+                    x: clickX - 15,
+                    y: clickY - 25,
+                    w: 30,
+                    h: 50,
+                    hp: 2
+                });
+            }
+        });
+
+        let lastTime = 0;
+        function gameLoop(timestamp) {
+            if (!arcadeRunning) return;
+            let dt = (timestamp - lastTime) / 1000;
+            lastTime = timestamp;
+
+            // Renderizar fondo y escenario
+            arcadeCtx.fillStyle = '#1e293b'; // Cielo nocturno
+            arcadeCtx.fillRect(0, 0, arcadeCanvas.width, arcadeCanvas.height);
+
+            // Suelo
+            arcadeCtx.fillStyle = '#15803d';
+            arcadeCtx.fillRect(0, 320, arcadeCanvas.width, 60);
+
+            // Casa de ladrillos a la derecha
+            arcadeCtx.fillStyle = '#b91c1c';
+            arcadeCtx.fillRect(houseX, houseY, 80, 80);
+            arcadeCtx.fillStyle = '#450a0a';
+            // Techo
+            arcadeCtx.beginPath();
+            arcadeCtx.moveTo(houseX - 10, houseY);
+            arcadeCtx.lineTo(houseX + 40, houseY - 40);
+            arcadeCtx.lineTo(houseX + 90, houseY);
+            arcadeCtx.fill();
+            // Puerta
+            arcadeCtx.fillStyle = '#78350f';
+            arcadeCtx.fillRect(houseX + 25, houseY + 45, 30, 35);
+            // Texto casa
+            arcadeCtx.fillStyle = '#ffffff';
+            arcadeCtx.font = 'bold 12px sans-serif';
+            arcadeCtx.fillText('FORTALEZA', houseX + 5, houseY + 30);
+
+            // Dibujar Lobo a la izquierda
+            arcadeCtx.font = '45px serif';
+            arcadeCtx.fillText('🐺', wolfX, wolfY);
+
+            // Generar ráfagas de aire (soplidos)
+            spawnTimer += dt;
+            if (spawnTimer > Math.max(0.8, 2.2 - (score * 0.05))) {
+                spawnTimer = 0;
+                attacks.push({
+                    x: wolfX + 40,
+                    y: 260 + (Math.random() * 40 - 20),
+                    speed: 180 + Math.random() * 100 + (score * 5),
+                    radius: 14
+                });
+            }
+
+            // Actualizar y dibujar barreras
+            for (let i = barriers.length - 1; i >= 0; i--) {
+                let b = barriers[i];
+                arcadeCtx.fillStyle = b.hp === 2 ? '#d97706' : '#92400e';
+                arcadeCtx.fillRect(b.x, b.y, b.w, b.h);
+                arcadeCtx.strokeStyle = '#fef08a';
+                arcadeCtx.strokeRect(b.x, b.y, b.w, b.h);
+                arcadeCtx.fillStyle = '#ffffff';
+                arcadeCtx.font = '10px sans-serif';
+                arcadeCtx.fillText('🧱', b.x + 6, b.y + 30);
+            }
+
+            // Actualizar y dibujar soplidos del lobo
+            for (let i = attacks.length - 1; i >= 0; i--) {
+                let a = attacks[i];
+                a.x += a.speed * dt;
+
+                // Dibujar ráfaga aire
+                arcadeCtx.fillStyle = '#cbd5e1';
+                arcadeCtx.beginPath();
+                arcadeCtx.arc(a.x, a.y, a.radius, 0, Math.PI * 2);
+                arcadeCtx.fill();
+                arcadeCtx.fillText('💨', a.x - 12, a.y + 6);
+
+                // Colisión con barreras
+                let hitBarrier = false;
+                for (let j = barriers.length - 1; j >= 0; j--) {
+                    let b = barriers[j];
+                    if (a.x + a.radius > b.x && a.x - a.radius < b.x + b.w &&
+                        a.y + a.radius > b.y && a.y - a.radius < b.y + b.h) {
+                        b.hp -= 1;
+                        if (b.hp <= 0) barriers.splice(j, 1);
+                        hitBarrier = true;
+                        score += 10;
+                        updateArcadeHUD();
+                        break;
+                    }
+                }
+
+                if (hitBarrier) {
+                    attacks.splice(i, 1);
+                    continue;
+                }
+
+                // Colisión con la casa
+                if (a.x + a.radius >= houseX) {
+                    attacks.splice(i, 1);
+                    lives -= 1;
+                    updateArcadeHUD();
+                    if (lives <= 0) {
+                        endArcadeGame(false);
+                        return;
+                    }
+                }
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        function endArcadeGame(win) {
+            arcadeRunning = false;
+            const overlay = document.getElementById('arcade-overlay');
+            const title = document.getElementById('arcade-title');
+            const desc = document.getElementById('arcade-desc');
+            const btn = document.getElementById('arcade-start-btn');
+
+            overlay.classList.remove('hidden');
+            title.textContent = '¡El Lobo derribó las defensas!';
+            title.className = 'text-3xl font-bold text-red-400 mb-2';
+            desc.textContent = `Puntuación final: ${score} puntos. ¡Inténtalo de nuevo y protege la casa con más ladrillos!`;
+            btn.textContent = '🔄 Jugar Otra Vez';
+        }
+
+        // --- LÓGICA AVANZADA DE COLOREADO Y CANVAS ---
+        const paintCanvas = document.getElementById('paintCanvas');
+        const paintCtx = paintCanvas.getContext('2d');
+        
+        let isDrawing = false;
+        let currentColor = '#ef4444';
+        let currentTool = 'brush'; // 'brush', 'eraser', 'stamp'
+        let currentStamp = '🐷';
+        let brushSize = 6;
+        let history = [];
+        const maxHistory = 10;
+
+        function saveHistory() {
+            if (history.length >= maxHistory) history.shift();
+            history.push(paintCtx.getImageData(0, 0, paintCanvas.width, paintCanvas.height));
+        }
+
+        function undoCanvas() {
+            if (history.length > 0) {
+                let previousState = history.pop();
+                paintCtx.putImageData(previousState, 0, 0);
+            }
+        }
+
+        function setColor(color) {
+            currentColor = color;
+            if (currentTool === 'eraser') setTool('brush');
+        }
+
+        function setLineWidth(size) {
+            brushSize = size;
+        }
+
+        function setTool(tool) {
+            currentTool = tool;
+            document.getElementById('tool-brush').className = tool === 'brush' ? 'px-3 py-1.5 bg-pink-500 text-white font-bold text-xs rounded-xl shadow transition' : 'px-3 py-1.5 bg-white text-slate-700 border font-bold text-xs rounded-xl shadow transition';
+            document.getElementById('tool-eraser').className = tool === 'eraser' ? 'px-3 py-1.5 bg-pink-500 text-white font-bold text-xs rounded-xl shadow transition' : 'px-3 py-1.5 bg-white text-slate-700 border font-bold text-xs rounded-xl shadow transition';
+            document.getElementById('tool-stamp').className = tool === 'stamp' ? 'px-3 py-1.5 bg-pink-500 text-white font-bold text-xs rounded-xl shadow transition' : 'px-3 py-1.5 bg-white text-slate-700 border font-bold text-xs rounded-xl shadow transition';
+            
+            document.getElementById('stampSelector').classList.toggle('hidden', tool !== 'stamp');
+        }
+
+        function setStamp(stamp) {
+            currentStamp = stamp;
+        }
+
+        function clearCanvas() {
+            saveHistory();
+            paintCtx.fillStyle = '#ffffff';
+            paintCtx.fillRect(0, 0, paintCanvas.width, paintCanvas.height);
+            drawTemplate(document.getElementById('templateSelect').value);
+        }
+
+        function changeTemplate(templateName) {
+            saveHistory();
+            paintCtx.fillStyle = '#ffffff';
+            paintCtx.fillRect(0, 0, paintCanvas.width, paintCanvas.height);
+            drawTemplate(templateName);
+        }
+
+        function drawTemplate(name) {
+            paintCtx.strokeStyle = '#334155';
+            paintCtx.lineWidth = 3;
+            paintCtx.lineCap = 'round';
+
+            if (name === 'house') {
+                // Dibujar Casa
+                paintCtx.strokeRect(220, 180, 210, 150);
+                paintCtx.beginPath();
+                paintCtx.moveTo(200, 180);
+                paintCtx.lineTo(325, 80);
+                paintCtx.lineTo(450, 180);
+                paintCtx.closePath();
+                paintCtx.stroke();
+                // Puerta
+                paintCtx.strokeRect(295, 240, 60, 90);
+                // Ventana
+                paintCtx.beginPath();
+                paintCtx.arc(325, 135, 22, 0, Math.PI * 2);
+                paintCtx.stroke();
+            } else if (name === 'pig') {
+                // Dibujar Cerdito
+                paintCtx.beginPath();
+                paintCtx.arc(325, 200, 80, 0, Math.PI * 2); // Cabeza
+                paintCtx.stroke();
+                // Hocico
+                paintCtx.beginPath();
+                paintCtx.ellipse(325, 215, 30, 20, 0, 0, Math.PI * 2);
+                paintCtx.stroke();
+                // Ojos
+                paintCtx.beginPath();
+                paintCtx.arc(295, 180, 8, 0, Math.PI * 2);
+                paintCtx.arc(355, 180, 8, 0, Math.PI * 2);
+                paintCtx.fill();
+                // Orejas
+                paintCtx.beginPath();
+                paintCtx.moveTo(260, 140); paintCtx.lineTo(240, 80); paintCtx.lineTo(290, 125);
+                paintCtx.moveTo(390, 140); paintCtx.lineTo(410, 80); paintCtx.lineTo(360, 125);
+                paintCtx.stroke();
+            } else if (name === 'wolf') {
+                // Dibujar Silueta Lobo
+                paintCtx.beginPath();
+                paintCtx.arc(300, 180, 70, 0, Math.PI * 2);
+                paintCtx.stroke();
+                // Hocico puntiagudo
+                paintCtx.beginPath();
+                paintCtx.moveTo(320, 200); paintCtx.lineTo(420, 230); paintCtx.lineTo(300, 240);
+                paintCtx.stroke();
+                // Orejas puntiagudas
+                paintCtx.beginPath();
+                paintCtx.moveTo(260, 130); paintCtx.lineTo(250, 60); paintCtx.lineTo(290, 115);
+                paintCtx.stroke();
+            }
+        }
+
+        // Eventos de dibujo
+        function getCanvasPos(e) {
+            const rect = paintCanvas.getBoundingClientRect();
+            const scaleX = paintCanvas.width / rect.width;
+            const scaleY = paintCanvas.height / rect.height;
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            return {
+                x: (clientX - rect.left) * scaleX,
+                y: (clientY - rect.top) * scaleY
+            };
+        }
+
+        function startPainting(e) {
+            saveHistory();
+            isDrawing = true;
+            const pos = getCanvasPos(e);
+
+            if (currentTool === 'stamp') {
+                paintCtx.font = `${brushSize * 3 + 15}px serif`;
+                paintCtx.textAlign = 'center';
+                paintCtx.textBaseline = 'middle';
+                paintCtx.fillText(currentStamp, pos.x, pos.y);
+                isDrawing = false;
+                return;
+            }
+
+            paintCtx.beginPath();
+            paintCtx.moveTo(pos.x, pos.y);
+        }
+
+        function paint(e) {
+            if (!isDrawing || currentTool === 'stamp') return;
+            const pos = getCanvasPos(e);
+
+            paintCtx.lineWidth = brushSize;
+            paintCtx.lineCap = 'round';
+            paintCtx.lineJoin = 'round';
+
+            if (currentTool === 'eraser') {
+                paintCtx.strokeStyle = '#ffffff';
+            } else {
+                paintCtx.strokeStyle = currentColor;
+            }
+
+            paintCtx.lineTo(pos.x, pos.y);
+            paintCtx.stroke();
+        }
+
+        function stopPainting() {
+            isDrawing = false;
+            paintCtx.beginPath();
+        }
+
+        paintCanvas.addEventListener('mousedown', startPainting);
+        paintCanvas.addEventListener('mousemove', paint);
+        paintCanvas.addEventListener('mouseup', stopPainting);
+        paintCanvas.addEventListener('mouseleave', stopPainting);
+
+        paintCanvas.addEventListener('touchstart', (e) => { e.preventDefault(); startPainting(e); });
+        paintCanvas.addEventListener('touchmove', (e) => { e.preventDefault(); paint(e); });
+        paintCanvas.addEventListener('touchend', stopPainting);
+
+        // Inicializar canvas al cargar
+        window.addEventListener('load', () => {
+            paintCtx.fillStyle = '#ffffff';
+            paintCtx.fillRect(0, 0, paintCanvas.width, paintCanvas.height);
+            drawTemplate('house');
+        });
+    </script>
+</body>
+</html>
